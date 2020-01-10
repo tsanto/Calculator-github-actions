@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P49-Kz-W6q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Dgv-u7-d5o">
+            <objects>
+                <viewController id="P49-Kz-W6q" customClass="ViewController" customModule="HelloWorld_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NzI-Sw-oo9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Iy5-bv-FDg">
+                                <rect key="frame" x="98.5" y="406" width="217.5" height="94.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DJe-NB-g7B">
+                                        <rect key="frame" x="0.0" y="0.0" width="217.5" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-mv-G8i">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="acK-PP-s2x"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTb-fm-Za4">
+                                                <rect key="frame" x="105" y="0.0" width="7.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N4y-lq-L8k">
+                                                <rect key="frame" x="117.5" y="0.0" width="100" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="hpq-6u-rJg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rC-Ud-yXF">
+                                        <rect key="frame" x="0.0" y="34" width="217.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="O2i-ZN-3qO"/>
+                                        </constraints>
+                                        <state key="normal" title="Multiply"/>
+                                        <connections>
+                                            <action selector="multiplyTapped:" destination="P49-Kz-W6q" eventType="touchUpInside" id="1ET-xU-sAL"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vsh-PP-sZt">
+                                        <rect key="frame" x="0.0" y="74" width="217.5" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Result:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGR-Qb-Myg">
+                                                <rect key="frame" x="0.0" y="0.0" width="199" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sV7-BI-Teb">
+                                                <rect key="frame" x="207" y="0.0" width="10.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Iy5-bv-FDg" firstAttribute="centerY" secondItem="i8b-Z2-LcJ" secondAttribute="centerY" id="EsO-M5-TNa"/>
+                            <constraint firstItem="Iy5-bv-FDg" firstAttribute="centerX" secondItem="i8b-Z2-LcJ" secondAttribute="centerX" id="LZB-4U-uno"/>
+                            <constraint firstItem="Iy5-bv-FDg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i8b-Z2-LcJ" secondAttribute="leading" constant="20" id="MVb-9L-MdX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i8b-Z2-LcJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultValueLabel" destination="sV7-BI-Teb" id="zsp-57-xJB"/>
+                        <outlet property="valueXTextField" destination="Btc-mv-G8i" id="x4c-hW-ufD"/>
+                        <outlet property="valueYTextField" destination="N4y-lq-L8k" id="HZE-oE-aFL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wu-SN-91x" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="121"/>
+        </scene>
+    </scenes>
+</document>
