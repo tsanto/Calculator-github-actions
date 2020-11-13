@@ -11,7 +11,7 @@ xcuserdata/
 
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
 .DS_Store
-*/.DS_Store
+**/.DS_Store
 build/
 DerivedData/
 *.moved-aside
